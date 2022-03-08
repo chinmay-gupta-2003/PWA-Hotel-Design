@@ -132,11 +132,11 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .user-prof-pic {
   border-radius: 50%;
-  width: 5.2rem;
-  height: 5.2rem;
+  width: 4.8rem;
+  height: 4.8rem;
 }
 .user-prof-name {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 600;
   color: #495057;
 }
@@ -175,9 +175,8 @@ input[type="search"]::-webkit-search-results-decoration {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   background-color: #343a40;
-  height: 80rem;
+  /* height: 80rem; */
 }
 .navigation-pane {
   margin-top: 4.4rem;
@@ -190,7 +189,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .navigation-list li {
   list-style: none;
   font-size: 1.6rem;
-  padding: 1.6rem;
+  padding: 1.8rem;
   color: #fff;
   text-transform: uppercase;
   font-weight: 400;
