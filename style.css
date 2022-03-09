@@ -167,8 +167,9 @@ input[type="search"]::-webkit-search-results-decoration {
   left: 54%;
   top: 24%;
 }
-.main {
+main {
   display: flex;
+  justify-content: space-between;
 }
 .left-container {
   width: 20%;
@@ -241,4 +242,16 @@ a:visited {
 
 .nav-link-active {
   background-color: #cc5de8;
+}
+
+.right-container {
+  width: 80%;
+}
+
+.gallery-cont {
+  display: flex;
+}
+
+.hotel-img {
+  width: 100%;
 }
