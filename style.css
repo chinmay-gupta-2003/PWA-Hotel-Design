@@ -246,6 +246,7 @@ main {
 
 .right-container {
   width: 81.4%;
+  /* height: 80rem; */
 }
 
 .gallery-cont {
@@ -296,9 +297,8 @@ main {
 .hotel-location-cont a:visited {
   margin-left: -2rem;
   text-decoration: none;
-
   border-bottom: 1px solid #be4bdb;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 400;
   color: #be4bdb;
 }
@@ -324,7 +324,9 @@ main {
 }
 
 .vote-count {
+  font-size: 0.92rem;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .vote-rating {
