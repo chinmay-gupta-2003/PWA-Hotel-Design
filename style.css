@@ -11,6 +11,23 @@ body {
   max-width: 144rem;
   font-family: "Roboto", sans-serif;
 }
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+
+  50% {
+    transform: scale(1.04);
+    box-shadow: 0 4px 3rem rgba(0, 0, 0, 0.1);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}
 header {
   height: 7.2rem;
   background-color: #fff;
@@ -307,6 +324,7 @@ main {
 .hotel-location-cont a:active {
   color: #343a40;
   border-bottom: 1px solid #343a40;
+  animation: beat 0.84s infinite;
 }
 
 .votes-cont {
