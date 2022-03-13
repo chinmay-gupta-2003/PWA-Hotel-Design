@@ -20,7 +20,7 @@ body {
 
   50% {
     transform: scale(1.04);
-    box-shadow: 0 4px 4rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 4rem rgba(0, 0, 0, 0.24);
   }
 
   100% {
@@ -434,6 +434,18 @@ main {
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
+  position: relative;
+}
+
+.review-cont-1::before,
+.review-cont-2::before {
+  content: "\201C";
+  position: absolute;
+  top: -3.4rem;
+  left: -0.6rem;
+  font-size: 18rem;
+  font-family: sans-serif;
+  filter: opacity(0.092);
 }
 
 .review-para {
@@ -494,4 +506,55 @@ main {
 .show-all-link:hover .link-text,
 .show-all-link:active .link-text {
   margin-left: 1rem;
+}
+.right-container-bottom {
+  padding: 4rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.cta-heading {
+  font-weight: 300;
+  font-size: 2rem;
+  color: #89949e;
+  letter-spacing: 0.8px;
+}
+.btn {
+  color: #fff;
+  border: none;
+  background-image: linear-gradient(to right, #cc5de8, #862e9c);
+  position: relative;
+  border-radius: 100px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-visible,
+.btn-invisible {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  font-size: 1.48rem;
+  transition: all 0.2s;
+  padding: 2rem 7.2rem;
+}
+
+.btn-invisible {
+  padding: 2rem 0;
+  top: -100%;
+  left: 0;
+  position: absolute;
+}
+
+.btn:hover {
+  background-image: linear-gradient(to right, #862e9c, #cc5de8);
+  animation: beat 1s 0.04s infinite;
+}
+.btn:hover .btn-visible {
+  transform: translatey(100%);
+}
+.btn:hover .btn-invisible {
+  top: 0;
 }
